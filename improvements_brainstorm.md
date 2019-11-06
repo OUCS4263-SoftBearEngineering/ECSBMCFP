@@ -1,6 +1,6 @@
 Hardware Simulator:
 1. Click app icon to open software (not have to use terminal)
-    (I'm currently able to find the executable in my file system and double click to run windows batch file)
+    (I'm currently able to find the executable in my file system and double click to run windows batch file) (mine doesnt:/ )
 2. Can edit text in the app (not have to use text editor)
 3. Make UI scale for 4k and full screen
 4. Do not need to import testing code in software
@@ -12,7 +12,7 @@ Hardware Simulator:
   (We need an ability to skip or remember it's been completed
 
 Assembler:
-1. Combine with CPU Emulator
+1. Show all differences rather than only first
 
 CPU Emulator:
 1. Make interface simpler
