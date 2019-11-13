@@ -9,7 +9,7 @@ Hardware Simulator:
 7. Make the project progression more clear (ie. Has students complete steps within the software rather than having to constantly consult textbook for what chip to implement next)
 8. Make 3a tests faster
 9. Tutorial when first pulling up software 
-  (We need an ability to skip or remember it's been completed
+  (We need an ability to skip or remember it's been completed)
 
 Assembler:
 1. Show all differences rather than only first
@@ -19,3 +19,6 @@ CPU Emulator:
 2. Test scripts do not have to be imported
 3. Visualize PC better (maybe with arrow?)
 4. Make tests faster
+
+General:
+1. These chip descriptions blow on chapter 5
