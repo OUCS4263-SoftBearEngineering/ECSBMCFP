@@ -1,5 +1,5 @@
 ## Current Deployment
-# AJAX Web App Deployment
+### AJAX Web App Deployment
 
 Our project is essentially the conversion of a desktop application into a web applet, that being, a program that is embedded into a web page. This means that our deployment process would consist of the same deployment processes that are used for a regular website. Luckily we learned some of this process last semester in our Software Engineering I class. The quick simplified version of that is as follows:
 
