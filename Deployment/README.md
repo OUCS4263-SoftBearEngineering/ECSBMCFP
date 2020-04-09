@@ -3,7 +3,7 @@
 ## Original Deployment
 Since this is a software to improve the exercise tools within textbook: "Elements of Computing Systems: Building a Modern Computer from First Principles," I will go over the previous deployment to compare our improvements.
 
-1) Visit [Nand2Textis.org](https://www.nand2tetris.org/) and download the textbook for the excercise problems.
+1) Visit [Nand2Textis.org](https://www.nand2tetris.org/) and download the textbook for the exercise problems.
 
 2) Visit the "Software Tab" and install the Nand2Textris software. Depending on the operating system, follow the setup guidelines provided on the website. For Windows, ensure the proper JRE is installed.
 
