@@ -3,7 +3,9 @@
 
 ## Implementation
 The Nand2Tetris software is a large library of Java code utilizing the java GUI elements to visually represent the software. The limitations of such a user interface does not allow all devices to view the software. Our goal was to improve the overall UI design, and allow more compatability for the users by launching the code onto a server.
+
 We went through many various sources to assist us in converting the Java codebase into a usable web-framework. We settled on the implementation of Ajax Swing to convert code onto a local host. A lot of configuration was required to properly set up the file paths to display and run the softtware correctly.
+
 One the localhost server was properly running, we began to transition the topcat based localhost server onto the GCP network. With a GCP server, we now have the ability to run a server allowing all users to access the software. The version of jdk or operating system no longer limits compatability.
 
 Previous Implementation: Download the Simulators.jar files and run the execuables from the local file system. Work on the problems outside of the software, then upload the files for testing.
