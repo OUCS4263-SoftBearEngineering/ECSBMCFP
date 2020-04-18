@@ -1,9 +1,37 @@
 ## Current Deployment
 
-### Hosting AjaxSwing HardwareSimulator on a GCP VM
-blah blah blah 
+### Hosting AjaxSwing HardwareSimulator on an HTTP-enabled GCP VM
+1. Select the three dots next to your GCP VM, and select "View network details".
+2. Create a new Firewall Rule titled "ajaxswing" with IP Range: 0.0.0.0/0, and tcp port: 8040
+3. SSH to the VM. Select the gear icon on the top right and upload the ajaxswing_hwsim.zip
+4. Issue the following commands:
+  sudo apt-get install unzip openjdk-8-jre openjdk-8-jdk
+  unzip -r ./ajaxswing_hwsim ./
+  
+5. Now we configure AjaxSwing settings to run the server.
+  cd AjaxSwing4.6.4/bin
+  
+6. Edit the JAVA_HOME variable within setEnv.sh to read: "/usr/lib/jvm/java-8-openjdk-amd64"
 
+7. Run the following commands to configure the AjaxSwing environment:
+  cd setup
+  ./setup.sh
+  ./enableJdk18.sh
+  cd ..
+  ./setEnv.sh
+  
+8. Now we configure the Tomcat server to use our VM as host. From the AjaxSwing4.6.4 directory:
+  cd tomcat/conf/
 
+9. Within "server.xml", add parameter address="0.0.0.0" to the "Connector port=8040" tag.
+10. In the "Engine" tag, set defaultHost="VM EXTERNAL IP"
+11. In the "Host" tag, set name="VM EXTERNAL IP"
+
+12. Navigate back to AjaxSwing4.6.4/bin and run:
+  ./startServer.sh
+  
+13. The HardwareSimulator can now be accessed at "http://[VM EXTERNAL IP]:8040/ajaxswing/apps/hwsim
+  
 ### AJAX Web App Deployment (old)
 
 Our project is essentially the conversion of a desktop application into a web applet, that being, a program that is embedded into a web page. This means that our deployment process would consist of the same deployment processes that are used for a regular website. Luckily we learned some of this process last semester in our Software Engineering I class. The quick simplified version of that is as follows:
