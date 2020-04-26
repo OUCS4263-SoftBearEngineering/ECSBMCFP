@@ -2,7 +2,7 @@
 
 ## Application
 
-http://35.222.255.145:8040/ajaxswing/apps/hwsim
+http://34.67.47.55:8040/ajaxswing/apps/hwsim
 
 
 ## Implementation
